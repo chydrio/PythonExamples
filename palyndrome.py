@@ -24,3 +24,6 @@ def isPalyndrome(s):
             if s[i]!=s[len(s)-i-1]:
                 return False
         return True
+        
+def isPalyndrome(s):
+        return s == s[::-1]

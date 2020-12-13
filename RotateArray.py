@@ -6,3 +6,12 @@ def rotate(nums: List[int], k: int) -> None:
         nums.reverse()
         nums[:k]=reversed(nums[:k])
         nums[k:]=reversed(nums[k:])
+
+
+def reverse_array(arr, start, end):
+  while start < end:
+    temp = arr[start]
+    arr[start] = arr[end]
+    arr[end] = temp
+    start+=1
+    end-=1
